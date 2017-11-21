@@ -7,7 +7,7 @@ $say_json = '{"module":"tts", "data": {"text":""}}';
 $app->get('/say/{text}',
       function ($text) use ($app, $say_json, $failedRequest_json) {
 
-         if (!empty($text))
+         if (is_string($text))
          {
             $jsonArray = json_decode($say_json); // convert to json object
             $jsonArray->data->text = $app->escape($text);
