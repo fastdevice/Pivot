@@ -42,7 +42,7 @@ $app->get('/dcid/',
          {
             // Error - Failed Request
             $jsonArray = json_decode($failedRequest_json); // convert to json object
-            $jsonArray->payload->value1 = $app->escape($des);
+            $jsonArray->payload->value1 = $app->escape($to);
             $jsonArray->payload->value2 = $app->escape($from);
             $jsonArray->error->code = "9";
             $jsonArray->error->message = "Invalid Format";
