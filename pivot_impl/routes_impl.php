@@ -25,6 +25,7 @@ $failedRequest_json = '{
 
 include("fwd.php");
 include("say.php");
+include("cid.php");
 
 
 // -- nothing beyond this point
