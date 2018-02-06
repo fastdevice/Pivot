@@ -8,3 +8,5 @@ yourdomain.com/fwd/{from}/{to}
 yourdomain.com/fwd/{to}
 
 yourdomain.com/say/{your text here}
+
+yourdomain.com/dcid/
