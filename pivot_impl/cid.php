@@ -26,9 +26,9 @@ $app->get('/dcid/',
          $dial_array = explode('*', $request);
          
          // assign digit groupings
-         // $feature_code = $dial_array[1];
-         $from = $dial_array[2];
-         $to = $dial_array[3];
+         // $feature_code = $dial_array['1'];
+         $from = $dial_array['2'];
+         $to = $dial_array['3'];
          
          if (is_numeric($to) and is_numeric($from) and (sizeof($dial_array) < 5))
          {
