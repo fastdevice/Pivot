@@ -30,7 +30,7 @@ $app->get('/dcid/',
          $from = $dial_array['2'];
          $to = $dial_array['3'];
          
-         if (is_numeric($to) and is_numeric($from) and (sizeof($dial_array) < 5))
+         if (is_numeric($to) and is_numeric($from) and (count($dial_array) < 5))
          {
             $jsonArray = json_decode($resToFrom_json); // convert to json object
             $jsonArray->children->_->data->to_did = $app->escape($to);
