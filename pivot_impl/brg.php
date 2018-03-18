@@ -27,7 +27,7 @@ $resTo_json = '{
 }';
 
 
-$app->get('/fwd/{to}/{from}',
+$app->get('/brg/{to}/{from}',
       function ($to, $from) use ($app, $resToFrom_json, $failedRequest_json) {
 
          if (is_numeric($to) and is_numeric($from))
@@ -51,7 +51,7 @@ $app->get('/fwd/{to}/{from}',
      }
 );
 
-$app->get('/fwd/{to}',
+$app->get('/brg/{to}',
       function ($to) use ($app, $resTo_json, $failedRequest_json) {
 
          if (is_numeric($to))
