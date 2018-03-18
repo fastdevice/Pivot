@@ -3,7 +3,7 @@ Pivot API Scripts for Kazoo
 
 These scripts are written in PHP and require https://silex.symfony.com/
 
-You can create a virtual host pointing to the 'Pivot' directory allowing for the below.
+You can create a virtual host pointing to the 'pivot' directory allowing for yourdomain.com/
 
 yourdomain.com/brg/{from}/{to}
 
