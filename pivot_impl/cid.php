@@ -35,7 +35,7 @@ $app->get('/dcid/',
             $jsonArray = json_decode($resToFrom_json); // convert to json object
             $jsonArray->children->_->data->to_did = $app->escape($to);
             $jsonArray->data->caller_id_number = $app->escape($from);
-            error_log ("JSON : " . json_encode($jsonArray) . "\r\n", 3, './event.log');
+            // error_log ("JSON : " . json_encode($jsonArray) . "\r\n", 3, './event.log');
             return json_encode($jsonArray);
          }
          else
@@ -46,7 +46,7 @@ $app->get('/dcid/',
             $jsonArray->payload->value2 = $app->escape($from);
             $jsonArray->error->code = "9";
             $jsonArray->error->message = "Invalid Format";
-            error_log ("ERROR : " . json_encode($jsonArray) . "\r\n", 3, './event.log');
+            // error_log ("ERROR : " . json_encode($jsonArray) . "\r\n", 3, './event.log');
             return json_encode($jsonArray);
          }
          // Exit
