@@ -23,7 +23,7 @@ $failedRequest_json = '{
 
 // Include API Controllers
 
-include("fwd.php");
+include("brg.php");
 include("say.php");
 include("cid.php");
 
